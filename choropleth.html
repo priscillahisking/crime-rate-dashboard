@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0827501a58d1e8144f604a46f6517a55 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_0827501a58d1e8144f604a46f6517a55" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_0827501a58d1e8144f604a46f6517a55 = L.map(
+                "map_0827501a58d1e8144f604a46f6517a55",
+                {
+                    center: [22.9734, 78.6569],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_8efca4a3c453323f5fbafd7f37c85de0 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_8efca4a3c453323f5fbafd7f37c85de0.addTo(map_0827501a58d1e8144f604a46f6517a55);
+        
+    
+            var circle_abf06d4ea7c9112b75181e0872dbfe78 = L.circle(
+                [23.0215374, 72.5800568],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 181700, "stroke": true, "weight": 3}
+            ).addTo(map_0827501a58d1e8144f604a46f6517a55);
+        
+    
+        var popup_2d67c86df95bc879c3774f9878014761 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7fce0066fd35256d0d5b65db1e45646d = $(`<div id="html_7fce0066fd35256d0d5b65db1e45646d" style="width: 100.0%; height: 100.0%;">Ahmedabad: 1817 crimes</div>`)[0];
+                popup_2d67c86df95bc879c3774f9878014761.setContent(html_7fce0066fd35256d0d5b65db1e45646d);
+            
+        
+
+        circle_abf06d4ea7c9112b75181e0872dbfe78.bindPopup(popup_2d67c86df95bc879c3774f9878014761)
+        ;
+
+        
+    
+    
+            var circle_b354b4f190898ddde6b874306f87524c = L.circle(
+                [12.9881567, 77.6226],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 358800, "stroke": true, "weight": 3}
+            ).addTo(map_0827501a58d1e8144f604a46f6517a55);
+        
+    
+        var popup_a09163b5ed6a72662b4991ab4c8bbffb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1b8ae41b1fb3a43c23f0d3025cf4270f = $(`<div id="html_1b8ae41b1fb3a43c23f0d3025cf4270f" style="width: 100.0%; height: 100.0%;">Bangalore: 3588 crimes</div>`)[0];
+                popup_a09163b5ed6a72662b4991ab4c8bbffb.setContent(html_1b8ae41b1fb3a43c23f0d3025cf4270f);
+            
+        
+
+        circle_b354b4f190898ddde6b874306f87524c.bindPopup(popup_a09163b5ed6a72662b4991ab4c8bbffb)
+        ;
+
+        
+    
+    
+            var circle_712db599ed802314f7e231782426df61 = L.circle(
+                [23.2584857, 77.401989],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 69000, "stroke": true, "weight": 3}
+            ).addTo(map_0827501a58d1e8144f604a46f6517a55);
+        
+    
+        var popup_81c7f3ecb3d82482547caaa25da025b5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ab437f2c52c842478804c34280e117a3 = $(`<div id="html_ab437f2c52c842478804c34280e117a3" style="width: 100.0%; height: 100.0%;">Bhopal: 690 crimes</div>`)[0];
+                popup_81c7f3ecb3d82482547caaa25da025b5.setContent(html_ab437f2c52c842478804c34280e117a3);
+            
+        
+
+        circle_712db599ed802314f7e231782426df61.bindPopup(popup_81c7f3ecb3d82482547caaa25da025b5)
+        ;
+
+        
+    
+    
+            var circle_1bf71d6568669f6e04d7651fab618cbc = L.circle(
+                [13.0836939, 80.270186],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 249300, "stroke": true, "weight": 3}
+            ).addTo(map_0827501a58d1e8144f604a46f6517a55);
+        
+    
+        var popup_ac1d8a03f66db37aa93bb30a69e9c26c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c917e89e08c6aec50f22974fefd0ae8f = $(`<div id="html_c917e89e08c6aec50f22974fefd0ae8f" style="width: 100.0%; height: 100.0%;">Chennai: 2493 crimes</div>`)[0];
+                popup_ac1d8a03f66db37aa93bb30a69e9c26c.setContent(html_c917e89e08c6aec50f22974fefd0ae8f);
+            
+        
+
+        circle_1bf71d6568669f6e04d7651fab618cbc.bindPopup(popup_ac1d8a03f66db37aa93bb30a69e9c26c)
+        ;
+
+        
+    
+    
+            var circle_818d32be9a9f7afc139180516853cc23 = L.circle(
+                [28.6273928, 77.1716954],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 540000, "stroke": true, "weight": 3}
+            ).addTo(map_0827501a58d1e8144f604a46f6517a55);
+        
+    
+        var popup_343b89acf8281a7690ce6577a2804357 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_06f807de7e8af58067532b5888454ef8 = $(`<div id="html_06f807de7e8af58067532b5888454ef8" style="width: 100.0%; height: 100.0%;">Delhi: 5400 crimes</div>`)[0];
+                popup_343b89acf8281a7690ce6577a2804357.setContent(html_06f807de7e8af58067532b5888454ef8);
+            
+        
+
+        circle_818d32be9a9f7afc139180516853cc23.bindPopup(popup_343b89acf8281a7690ce6577a2804357)
+        ;
+
+        
+    
+    
+            var circle_42bc0cdc181fd8a4e784a63f197d99e9 = L.circle(
+                [28.4031478, 77.3105561],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 35400, "stroke": true, "weight": 3}
+            ).addTo(map_0827501a58d1e8144f604a46f6517a55);
+        
+    
+        var popup_2bc8f983a735d9fbf680adcf548f3ccc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_38c70d17645ff947e028fd7538654bd5 = $(`<div id="html_38c70d17645ff947e028fd7538654bd5" style="width: 100.0%; height: 100.0%;">Faridabad: 354 crimes</div>`)[0];
+                popup_2bc8f983a735d9fbf680adcf548f3ccc.setContent(html_38c70d17645ff947e028fd7538654bd5);
+            
+        
+
+        circle_42bc0cdc181fd8a4e784a63f197d99e9.bindPopup(popup_2bc8f983a735d9fbf680adcf548f3ccc)
+        ;
+
+        
+    
+    
+            var circle_ebfd9bada3ff7befba49349ff054c5b3 = L.circle(
+                [28.7749966, 77.4586967],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 70400, "stroke": true, "weight": 3}
+            ).addTo(map_0827501a58d1e8144f604a46f6517a55);
+        
+    
+        var popup_8f6e756d9f484d6fc34e7590e229b44d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_37207b2b94a742e10fd7638a910ffdfa = $(`<div id="html_37207b2b94a742e10fd7638a910ffdfa" style="width: 100.0%; height: 100.0%;">Ghaziabad: 704 crimes</div>`)[0];
+                popup_8f6e756d9f484d6fc34e7590e229b44d.setContent(html_37207b2b94a742e10fd7638a910ffdfa);
+            
+        
+
+        circle_ebfd9bada3ff7befba49349ff054c5b3.bindPopup(popup_8f6e756d9f484d6fc34e7590e229b44d)
+        ;
+
+        
+    
+    
+            var circle_6b183f99c033f81988c21a0a89e1b7d6 = L.circle(
+                [17.360589, 78.4740613],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 288100, "stroke": true, "weight": 3}
+            ).addTo(map_0827501a58d1e8144f604a46f6517a55);
+        
+    
+        var popup_ad8cbce1767003c90de59e34b534143e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1bc9f80578392e4d5f545c517f228107 = $(`<div id="html_1bc9f80578392e4d5f545c517f228107" style="width: 100.0%; height: 100.0%;">Hyderabad: 2881 crimes</div>`)[0];
+                popup_ad8cbce1767003c90de59e34b534143e.setContent(html_1bc9f80578392e4d5f545c517f228107);
+            
+        
+
+        circle_6b183f99c033f81988c21a0a89e1b7d6.bindPopup(popup_ad8cbce1767003c90de59e34b534143e)
+        ;
+
+        
+    
+    
+            var circle_6393ea78b5b652ad841e3d076368356d = L.circle(
+                [22.7203616, 75.8681996],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 69900, "stroke": true, "weight": 3}
+            ).addTo(map_0827501a58d1e8144f604a46f6517a55);
+        
+    
+        var popup_7285130ec4e086d4c7342389b93a617a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f9caa468bb680fbef02a13bed9c4c172 = $(`<div id="html_f9caa468bb680fbef02a13bed9c4c172" style="width: 100.0%; height: 100.0%;">Indore: 699 crimes</div>`)[0];
+                popup_7285130ec4e086d4c7342389b93a617a.setContent(html_f9caa468bb680fbef02a13bed9c4c172);
+            
+        
+
+        circle_6393ea78b5b652ad841e3d076368356d.bindPopup(popup_7285130ec4e086d4c7342389b93a617a)
+        ;
+
+        
+    
+    
+            var circle_d6e03d56a891e65f8aadb95c420ae64a = L.circle(
+                [26.9154576, 75.8189817],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 147900, "stroke": true, "weight": 3}
+            ).addTo(map_0827501a58d1e8144f604a46f6517a55);
+        
+    
+        var popup_2fd0518d1b5f50f7988b4835421a293a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_05b5103b5e0d634b0c87f3b175f6cc3e = $(`<div id="html_05b5103b5e0d634b0c87f3b175f6cc3e" style="width: 100.0%; height: 100.0%;">Jaipur: 1479 crimes</div>`)[0];
+                popup_2fd0518d1b5f50f7988b4835421a293a.setContent(html_05b5103b5e0d634b0c87f3b175f6cc3e);
+            
+        
+
+        circle_d6e03d56a891e65f8aadb95c420ae64a.bindPopup(popup_2fd0518d1b5f50f7988b4835421a293a)
+        ;
+
+        
+    
+    
+            var circle_61d07237ce333c869458b478e332efac = L.circle(
+                [19.2396742, 73.1366482],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 35500, "stroke": true, "weight": 3}
+            ).addTo(map_0827501a58d1e8144f604a46f6517a55);
+        
+    
+        var popup_03eae1964e0dcfd5dcf61de983bcd60d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a6714a716a0dca2008dc43149e03d06c = $(`<div id="html_a6714a716a0dca2008dc43149e03d06c" style="width: 100.0%; height: 100.0%;">Kalyan: 355 crimes</div>`)[0];
+                popup_03eae1964e0dcfd5dcf61de983bcd60d.setContent(html_a6714a716a0dca2008dc43149e03d06c);
+            
+        
+
+        circle_61d07237ce333c869458b478e332efac.bindPopup(popup_03eae1964e0dcfd5dcf61de983bcd60d)
+        ;
+
+        
+    
+    
+            var circle_76d368d78d5d52c18d17c9396d9d434f = L.circle(
+                [26.4635198, 80.246895],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 111200, "stroke": true, "weight": 3}
+            ).addTo(map_0827501a58d1e8144f604a46f6517a55);
+        
+    
+        var popup_85b393d05af58e0864ea86fba03dc3c0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_56a3d1ce3e083bdce2d908dc955fe529 = $(`<div id="html_56a3d1ce3e083bdce2d908dc955fe529" style="width: 100.0%; height: 100.0%;">Kanpur: 1112 crimes</div>`)[0];
+                popup_85b393d05af58e0864ea86fba03dc3c0.setContent(html_56a3d1ce3e083bdce2d908dc955fe529);
+            
+        
+
+        circle_76d368d78d5d52c18d17c9396d9d434f.bindPopup(popup_85b393d05af58e0864ea86fba03dc3c0)
+        ;
+
+        
+    
+    
+            var circle_df9f273eda082a548623ab30d048878f = L.circle(
+                [22.5726459, 88.3638953],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 251800, "stroke": true, "weight": 3}
+            ).addTo(map_0827501a58d1e8144f604a46f6517a55);
+        
+    
+        var popup_1e2a22fdb55b2eaeff22d1ddb85e43c9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_72c8ed2656f115669221a12151fa8bbd = $(`<div id="html_72c8ed2656f115669221a12151fa8bbd" style="width: 100.0%; height: 100.0%;">Kolkata: 2518 crimes</div>`)[0];
+                popup_1e2a22fdb55b2eaeff22d1ddb85e43c9.setContent(html_72c8ed2656f115669221a12151fa8bbd);
+            
+        
+
+        circle_df9f273eda082a548623ab30d048878f.bindPopup(popup_1e2a22fdb55b2eaeff22d1ddb85e43c9)
+        ;
+
+        
+    
+    
+            var circle_d8c6f530e88b2950f94a195ed5b41e59 = L.circle(
+                [26.8381, 80.9346001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 145600, "stroke": true, "weight": 3}
+            ).addTo(map_0827501a58d1e8144f604a46f6517a55);
+        
+    
+        var popup_2d6f63f7f38019c4dca6fc3d0390b142 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_87b1dd75e0900214290288a9b1dcbc7a = $(`<div id="html_87b1dd75e0900214290288a9b1dcbc7a" style="width: 100.0%; height: 100.0%;">Lucknow: 1456 crimes</div>`)[0];
+                popup_2d6f63f7f38019c4dca6fc3d0390b142.setContent(html_87b1dd75e0900214290288a9b1dcbc7a);
+            
+        
+
+        circle_d8c6f530e88b2950f94a195ed5b41e59.bindPopup(popup_2d6f63f7f38019c4dca6fc3d0390b142)
+        ;
+
+        
+    
+    
+            var circle_13f79bd5406fe0c5449b55f690b809f1 = L.circle(
+                [30.9090157, 75.851601],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 76100, "stroke": true, "weight": 3}
+            ).addTo(map_0827501a58d1e8144f604a46f6517a55);
+        
+    
+        var popup_1ba11e4d6d6c334ee89849513ee6c3aa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_93e25c988298febb3f007ae4e6c592ca = $(`<div id="html_93e25c988298febb3f007ae4e6c592ca" style="width: 100.0%; height: 100.0%;">Ludhiana: 761 crimes</div>`)[0];
+                popup_1ba11e4d6d6c334ee89849513ee6c3aa.setContent(html_93e25c988298febb3f007ae4e6c592ca);
+            
+        
+
+        circle_13f79bd5406fe0c5449b55f690b809f1.bindPopup(popup_1ba11e4d6d6c334ee89849513ee6c3aa)
+        ;
+
+        
+    
+    
+            var circle_7e8c97ab6fbb0375fec8181cc795cc28 = L.circle(
+                [29.0018557, 77.7679671],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 39500, "stroke": true, "weight": 3}
+            ).addTo(map_0827501a58d1e8144f604a46f6517a55);
+        
+    
+        var popup_9e59753c59b2e068d8cd72b1985b2cb5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2108c537a85ed55ed5fff99d284fcf38 = $(`<div id="html_2108c537a85ed55ed5fff99d284fcf38" style="width: 100.0%; height: 100.0%;">Meerut: 395 crimes</div>`)[0];
+                popup_9e59753c59b2e068d8cd72b1985b2cb5.setContent(html_2108c537a85ed55ed5fff99d284fcf38);
+            
+        
+
+        circle_7e8c97ab6fbb0375fec8181cc795cc28.bindPopup(popup_9e59753c59b2e068d8cd72b1985b2cb5)
+        ;
+
+        
+    
+    
+            var circle_ae2d0670f7d9132e7cbcb94be0f82aee = L.circle(
+                [19.054999, 72.8692035],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 441500, "stroke": true, "weight": 3}
+            ).addTo(map_0827501a58d1e8144f604a46f6517a55);
+        
+    
+        var popup_2f22b3cd76d10249e13319f3755ca592 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7897f1f481d9e073167a5c9d9145f330 = $(`<div id="html_7897f1f481d9e073167a5c9d9145f330" style="width: 100.0%; height: 100.0%;">Mumbai: 4415 crimes</div>`)[0];
+                popup_2f22b3cd76d10249e13319f3755ca592.setContent(html_7897f1f481d9e073167a5c9d9145f330);
+            
+        
+
+        circle_ae2d0670f7d9132e7cbcb94be0f82aee.bindPopup(popup_2f22b3cd76d10249e13319f3755ca592)
+        ;
+
+        
+    
+    
+            var circle_24b594c063805c2a32d7b839a96565dd = L.circle(
+                [21.5071955, 78.9725097],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 105300, "stroke": true, "weight": 3}
+            ).addTo(map_0827501a58d1e8144f604a46f6517a55);
+        
+    
+        var popup_b48a09e501362acf1db4247c042784c0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_40cb6a1ed69f36197a32cb4e3f690fb7 = $(`<div id="html_40cb6a1ed69f36197a32cb4e3f690fb7" style="width: 100.0%; height: 100.0%;">Nagpur: 1053 crimes</div>`)[0];
+                popup_b48a09e501362acf1db4247c042784c0.setContent(html_40cb6a1ed69f36197a32cb4e3f690fb7);
+            
+        
+
+        circle_24b594c063805c2a32d7b839a96565dd.bindPopup(popup_b48a09e501362acf1db4247c042784c0)
+        ;
+
+        
+    
+    
+            var circle_302299d0aba308786f73af7e902d7003 = L.circle(
+                [20.0112475, 73.7902364],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 36600, "stroke": true, "weight": 3}
+            ).addTo(map_0827501a58d1e8144f604a46f6517a55);
+        
+    
+        var popup_3f863a74f4bf54e232447bdb5a228f89 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b8d5fd747baef093a9c59f53e0243077 = $(`<div id="html_b8d5fd747baef093a9c59f53e0243077" style="width: 100.0%; height: 100.0%;">Nashik: 366 crimes</div>`)[0];
+                popup_3f863a74f4bf54e232447bdb5a228f89.setContent(html_b8d5fd747baef093a9c59f53e0243077);
+            
+        
+
+        circle_302299d0aba308786f73af7e902d7003.bindPopup(popup_3f863a74f4bf54e232447bdb5a228f89)
+        ;
+
+        
+    
+    
+            var circle_4d98a01c47b3f082f782e94cf336bb9c = L.circle(
+                [25.6093239, 85.1235252],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 69500, "stroke": true, "weight": 3}
+            ).addTo(map_0827501a58d1e8144f604a46f6517a55);
+        
+    
+        var popup_98ba839f9aa99904e78c67547ebd3ea1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b8b9002b758cb9e60639c00e0601b8c0 = $(`<div id="html_b8b9002b758cb9e60639c00e0601b8c0" style="width: 100.0%; height: 100.0%;">Patna: 695 crimes</div>`)[0];
+                popup_98ba839f9aa99904e78c67547ebd3ea1.setContent(html_b8b9002b758cb9e60639c00e0601b8c0);
+            
+        
+
+        circle_4d98a01c47b3f082f782e94cf336bb9c.bindPopup(popup_98ba839f9aa99904e78c67547ebd3ea1)
+        ;
+
+        
+    
+    
+            var circle_557e4de78ebfe9fe452c48c05098c17a = L.circle(
+                [18.5213738, 73.8545071],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 221200, "stroke": true, "weight": 3}
+            ).addTo(map_0827501a58d1e8144f604a46f6517a55);
+        
+    
+        var popup_cc3d79cd7abc67e049f1f2633b43b8e3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_750d12d9a2e9932bed51d322144f7b5c = $(`<div id="html_750d12d9a2e9932bed51d322144f7b5c" style="width: 100.0%; height: 100.0%;">Pune: 2212 crimes</div>`)[0];
+                popup_cc3d79cd7abc67e049f1f2633b43b8e3.setContent(html_750d12d9a2e9932bed51d322144f7b5c);
+            
+        
+
+        circle_557e4de78ebfe9fe452c48c05098c17a.bindPopup(popup_cc3d79cd7abc67e049f1f2633b43b8e3)
+        ;
+
+        
+    
+    
+            var circle_da84357d69a2a7584bc64b46265ead50 = L.circle(
+                [22.3053263, 70.8028377],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 108400, "stroke": true, "weight": 3}
+            ).addTo(map_0827501a58d1e8144f604a46f6517a55);
+        
+    
+        var popup_ea1b2d3ecd2bbbc33e5b0c2ee9a1f084 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c9c953cefa212d51663128669e1e1247 = $(`<div id="html_c9c953cefa212d51663128669e1e1247" style="width: 100.0%; height: 100.0%;">Rajkot: 1084 crimes</div>`)[0];
+                popup_ea1b2d3ecd2bbbc33e5b0c2ee9a1f084.setContent(html_c9c953cefa212d51663128669e1e1247);
+            
+        
+
+        circle_da84357d69a2a7584bc64b46265ead50.bindPopup(popup_ea1b2d3ecd2bbbc33e5b0c2ee9a1f084)
+        ;
+
+        
+    
+    
+            var circle_0ba37f922d9442429889b5ba593b53e5 = L.circle(
+                [34.0747444, 74.8204443],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 37100, "stroke": true, "weight": 3}
+            ).addTo(map_0827501a58d1e8144f604a46f6517a55);
+        
+    
+        var popup_bc5a3aae513fbca5cec0d73c0c43bf3b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_71f9840785f0025f8821104635608a99 = $(`<div id="html_71f9840785f0025f8821104635608a99" style="width: 100.0%; height: 100.0%;">Srinagar: 371 crimes</div>`)[0];
+                popup_bc5a3aae513fbca5cec0d73c0c43bf3b.setContent(html_71f9840785f0025f8821104635608a99);
+            
+        
+
+        circle_0ba37f922d9442429889b5ba593b53e5.bindPopup(popup_bc5a3aae513fbca5cec0d73c0c43bf3b)
+        ;
+
+        
+    
+    
+            var circle_15d7d91ae0ce4df90b1cab6824b0ccfb = L.circle(
+                [21.2094892, 72.8317058],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 111100, "stroke": true, "weight": 3}
+            ).addTo(map_0827501a58d1e8144f604a46f6517a55);
+        
+    
+        var popup_7157b32144aa932ab595c3dd526e7097 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c324988cf6138ea9783285265214c41f = $(`<div id="html_c324988cf6138ea9783285265214c41f" style="width: 100.0%; height: 100.0%;">Surat: 1111 crimes</div>`)[0];
+                popup_7157b32144aa932ab595c3dd526e7097.setContent(html_c324988cf6138ea9783285265214c41f);
+            
+        
+
+        circle_15d7d91ae0ce4df90b1cab6824b0ccfb.bindPopup(popup_7157b32144aa932ab595c3dd526e7097)
+        ;
+
+        
+    
+    
+            var circle_eaf2ed2a264f93862f98445d3ea133d1 = L.circle(
+                [19.1943294, 72.9701779],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 70600, "stroke": true, "weight": 3}
+            ).addTo(map_0827501a58d1e8144f604a46f6517a55);
+        
+    
+        var popup_a5d2bae7c17d09ffcb7360e9f1aa9d51 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9d9cff255ed4011f518c85e85befdfc2 = $(`<div id="html_9d9cff255ed4011f518c85e85befdfc2" style="width: 100.0%; height: 100.0%;">Thane: 706 crimes</div>`)[0];
+                popup_a5d2bae7c17d09ffcb7360e9f1aa9d51.setContent(html_9d9cff255ed4011f518c85e85befdfc2);
+            
+        
+
+        circle_eaf2ed2a264f93862f98445d3ea133d1.bindPopup(popup_a5d2bae7c17d09ffcb7360e9f1aa9d51)
+        ;
+
+        
+    
+    
+            var circle_6f1b9f2452806ce3b080807a08280703 = L.circle(
+                [25.3356491, 83.0076292],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 35500, "stroke": true, "weight": 3}
+            ).addTo(map_0827501a58d1e8144f604a46f6517a55);
+        
+    
+        var popup_ca0c1facde31bf4b473cf905b25cba8d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b838c8e0a05dac14c276e9e0ac9d4720 = $(`<div id="html_b838c8e0a05dac14c276e9e0ac9d4720" style="width: 100.0%; height: 100.0%;">Varanasi: 355 crimes</div>`)[0];
+                popup_ca0c1facde31bf4b473cf905b25cba8d.setContent(html_b838c8e0a05dac14c276e9e0ac9d4720);
+            
+        
+
+        circle_6f1b9f2452806ce3b080807a08280703.bindPopup(popup_ca0c1facde31bf4b473cf905b25cba8d)
+        ;
+
+        
+    
+    
+            var circle_bf09dcc50a9529fcb13803af9d966cc8 = L.circle(
+                [19.3428238, 72.805441],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 36200, "stroke": true, "weight": 3}
+            ).addTo(map_0827501a58d1e8144f604a46f6517a55);
+        
+    
+        var popup_b86f1d369693171348c356a670820fa1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e6e1832e461ceb5c676b300f69a0d4cb = $(`<div id="html_e6e1832e461ceb5c676b300f69a0d4cb" style="width: 100.0%; height: 100.0%;">Vasai: 362 crimes</div>`)[0];
+                popup_b86f1d369693171348c356a670820fa1.setContent(html_e6e1832e461ceb5c676b300f69a0d4cb);
+            
+        
+
+        circle_bf09dcc50a9529fcb13803af9d966cc8.bindPopup(popup_b86f1d369693171348c356a670820fa1)
+        ;
+
+        
+    
+    
+            var circle_9a07f32b644c76601795c6bef14d8c91 = L.circle(
+                [17.6935526, 83.2921297],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 72800, "stroke": true, "weight": 3}
+            ).addTo(map_0827501a58d1e8144f604a46f6517a55);
+        
+    
+        var popup_4bd62001278d635881449d3281de4d7f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a010dcebe09af5714614b259929edb01 = $(`<div id="html_a010dcebe09af5714614b259929edb01" style="width: 100.0%; height: 100.0%;">Visakhapatnam: 728 crimes</div>`)[0];
+                popup_4bd62001278d635881449d3281de4d7f.setContent(html_a010dcebe09af5714614b259929edb01);
+            
+        
+
+        circle_9a07f32b644c76601795c6bef14d8c91.bindPopup(popup_4bd62001278d635881449d3281de4d7f)
+        ;
+
+        
+    
+</script>
+</html>
