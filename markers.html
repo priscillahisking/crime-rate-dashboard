@@ -1,0 +1,1162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4251e66dd0eeeefe22cf14f26a0a8b5c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_4251e66dd0eeeefe22cf14f26a0a8b5c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_4251e66dd0eeeefe22cf14f26a0a8b5c = L.map(
+                "map_4251e66dd0eeeefe22cf14f26a0a8b5c",
+                {
+                    center: [22.9734, 78.6569],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b69a3f1cdb8664784e97cf5545e9178b = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_b69a3f1cdb8664784e97cf5545e9178b.addTo(map_4251e66dd0eeeefe22cf14f26a0a8b5c);
+        
+    
+            var marker_cluster_e83c05e5359b585a7961f5082339af89 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_2c92271cee67f40621fb608c6b112ab7 = L.marker(
+                [23.0215374, 72.5800568],
+                {
+}
+            ).addTo(marker_cluster_e83c05e5359b585a7961f5082339af89);
+        
+    
+            var icon_de977994fd2218a38fa9de8a610f7aa0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "fa-warning",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a936bd67c12f72469e035ae17969e521 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b4bf93275bcc3d65465f6ecf34ef88de = $(`<div id="html_b4bf93275bcc3d65465f6ecf34ef88de" style="width: 100.0%; height: 100.0%;">                 <div style='width:200px'>                     <h4>Ahmedabad</h4>                     <b>Crimes:</b> 1817<br>                     <b>Coordinates:</b> 23.0215, 72.5801                 </div>                 </div>`)[0];
+                popup_a936bd67c12f72469e035ae17969e521.setContent(html_b4bf93275bcc3d65465f6ecf34ef88de);
+            
+        
+
+        marker_2c92271cee67f40621fb608c6b112ab7.bindPopup(popup_a936bd67c12f72469e035ae17969e521)
+        ;
+
+        
+    
+    
+                marker_2c92271cee67f40621fb608c6b112ab7.setIcon(icon_de977994fd2218a38fa9de8a610f7aa0);
+            
+    
+            var marker_6a39a67e0902c4c6807e0cc6c8fadc93 = L.marker(
+                [12.9881567, 77.6226],
+                {
+}
+            ).addTo(marker_cluster_e83c05e5359b585a7961f5082339af89);
+        
+    
+            var icon_10bb9e80641db526b7bd1263b5032aac = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "fa-skull",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_764e83bb5df633f6ae6471f82c79856a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d923803c3dc5a4813796e1c5f5471ff1 = $(`<div id="html_d923803c3dc5a4813796e1c5f5471ff1" style="width: 100.0%; height: 100.0%;">                 <div style='width:200px'>                     <h4>Bangalore</h4>                     <b>Crimes:</b> 3588<br>                     <b>Coordinates:</b> 12.9882, 77.6226                 </div>                 </div>`)[0];
+                popup_764e83bb5df633f6ae6471f82c79856a.setContent(html_d923803c3dc5a4813796e1c5f5471ff1);
+            
+        
+
+        marker_6a39a67e0902c4c6807e0cc6c8fadc93.bindPopup(popup_764e83bb5df633f6ae6471f82c79856a)
+        ;
+
+        
+    
+    
+                marker_6a39a67e0902c4c6807e0cc6c8fadc93.setIcon(icon_10bb9e80641db526b7bd1263b5032aac);
+            
+    
+            var marker_c738d786c96c6a4ecf9b1175430f6630 = L.marker(
+                [23.2584857, 77.401989],
+                {
+}
+            ).addTo(marker_cluster_e83c05e5359b585a7961f5082339af89);
+        
+    
+            var icon_80439a5155de9bc6c22df183154694ff = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "fa-warning",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_16f3857ad124c56169c9609865f0baac = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ea7d8754a70252ce59d29db36ebdc494 = $(`<div id="html_ea7d8754a70252ce59d29db36ebdc494" style="width: 100.0%; height: 100.0%;">                 <div style='width:200px'>                     <h4>Bhopal</h4>                     <b>Crimes:</b> 690<br>                     <b>Coordinates:</b> 23.2585, 77.4020                 </div>                 </div>`)[0];
+                popup_16f3857ad124c56169c9609865f0baac.setContent(html_ea7d8754a70252ce59d29db36ebdc494);
+            
+        
+
+        marker_c738d786c96c6a4ecf9b1175430f6630.bindPopup(popup_16f3857ad124c56169c9609865f0baac)
+        ;
+
+        
+    
+    
+                marker_c738d786c96c6a4ecf9b1175430f6630.setIcon(icon_80439a5155de9bc6c22df183154694ff);
+            
+    
+            var marker_58974ec4cc88d72b6a53f6bfeadb4f73 = L.marker(
+                [13.0836939, 80.270186],
+                {
+}
+            ).addTo(marker_cluster_e83c05e5359b585a7961f5082339af89);
+        
+    
+            var icon_2e26ead6ace5385110f1b9eda750ad39 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "fa-skull",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0f0ec596746e9cc885bf9fb085c20983 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0c3c9f3971327fa73d93f4c7a8e54cdd = $(`<div id="html_0c3c9f3971327fa73d93f4c7a8e54cdd" style="width: 100.0%; height: 100.0%;">                 <div style='width:200px'>                     <h4>Chennai</h4>                     <b>Crimes:</b> 2493<br>                     <b>Coordinates:</b> 13.0837, 80.2702                 </div>                 </div>`)[0];
+                popup_0f0ec596746e9cc885bf9fb085c20983.setContent(html_0c3c9f3971327fa73d93f4c7a8e54cdd);
+            
+        
+
+        marker_58974ec4cc88d72b6a53f6bfeadb4f73.bindPopup(popup_0f0ec596746e9cc885bf9fb085c20983)
+        ;
+
+        
+    
+    
+                marker_58974ec4cc88d72b6a53f6bfeadb4f73.setIcon(icon_2e26ead6ace5385110f1b9eda750ad39);
+            
+    
+            var marker_bf517d5895ee1d22167b79922d062c4b = L.marker(
+                [28.6273928, 77.1716954],
+                {
+}
+            ).addTo(marker_cluster_e83c05e5359b585a7961f5082339af89);
+        
+    
+            var icon_1d12b3602dcb073537c967a6906825d4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "fa-skull",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f8b8d3c93e8f701da4ba19614a3fe349 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1abfa032bfae8cb2542648af949435e3 = $(`<div id="html_1abfa032bfae8cb2542648af949435e3" style="width: 100.0%; height: 100.0%;">                 <div style='width:200px'>                     <h4>Delhi</h4>                     <b>Crimes:</b> 5400<br>                     <b>Coordinates:</b> 28.6274, 77.1717                 </div>                 </div>`)[0];
+                popup_f8b8d3c93e8f701da4ba19614a3fe349.setContent(html_1abfa032bfae8cb2542648af949435e3);
+            
+        
+
+        marker_bf517d5895ee1d22167b79922d062c4b.bindPopup(popup_f8b8d3c93e8f701da4ba19614a3fe349)
+        ;
+
+        
+    
+    
+                marker_bf517d5895ee1d22167b79922d062c4b.setIcon(icon_1d12b3602dcb073537c967a6906825d4);
+            
+    
+            var marker_cfd6aa6bbbbd372919f1afe52907691b = L.marker(
+                [28.4031478, 77.3105561],
+                {
+}
+            ).addTo(marker_cluster_e83c05e5359b585a7961f5082339af89);
+        
+    
+            var icon_4ec2866d7ea837854091ab2647a24da7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "fa-warning",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8f7e26f68d7840ee510dc8f36a36c90f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cff3cccd171d259b7174dbb3ba329f5d = $(`<div id="html_cff3cccd171d259b7174dbb3ba329f5d" style="width: 100.0%; height: 100.0%;">                 <div style='width:200px'>                     <h4>Faridabad</h4>                     <b>Crimes:</b> 354<br>                     <b>Coordinates:</b> 28.4031, 77.3106                 </div>                 </div>`)[0];
+                popup_8f7e26f68d7840ee510dc8f36a36c90f.setContent(html_cff3cccd171d259b7174dbb3ba329f5d);
+            
+        
+
+        marker_cfd6aa6bbbbd372919f1afe52907691b.bindPopup(popup_8f7e26f68d7840ee510dc8f36a36c90f)
+        ;
+
+        
+    
+    
+                marker_cfd6aa6bbbbd372919f1afe52907691b.setIcon(icon_4ec2866d7ea837854091ab2647a24da7);
+            
+    
+            var marker_af08a09f51fa9d99a13f87b2e3a52739 = L.marker(
+                [28.7749966, 77.4586967],
+                {
+}
+            ).addTo(marker_cluster_e83c05e5359b585a7961f5082339af89);
+        
+    
+            var icon_c27a1f7d33895bc16846138784dc36bb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "fa-warning",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_620677b06246d0591d7735e3e1c95af8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4f646cbfb31a63a64a5dfaa976e38c21 = $(`<div id="html_4f646cbfb31a63a64a5dfaa976e38c21" style="width: 100.0%; height: 100.0%;">                 <div style='width:200px'>                     <h4>Ghaziabad</h4>                     <b>Crimes:</b> 704<br>                     <b>Coordinates:</b> 28.7750, 77.4587                 </div>                 </div>`)[0];
+                popup_620677b06246d0591d7735e3e1c95af8.setContent(html_4f646cbfb31a63a64a5dfaa976e38c21);
+            
+        
+
+        marker_af08a09f51fa9d99a13f87b2e3a52739.bindPopup(popup_620677b06246d0591d7735e3e1c95af8)
+        ;
+
+        
+    
+    
+                marker_af08a09f51fa9d99a13f87b2e3a52739.setIcon(icon_c27a1f7d33895bc16846138784dc36bb);
+            
+    
+            var marker_bb33f14bdd0603f0c8fb85693f873537 = L.marker(
+                [17.360589, 78.4740613],
+                {
+}
+            ).addTo(marker_cluster_e83c05e5359b585a7961f5082339af89);
+        
+    
+            var icon_b214349116518e99a95ecbf3d81fa2af = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "fa-skull",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9c18771716c36728debd64adc5d8a5bc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cf08bc14a0a99e80650dca0e3806f8cf = $(`<div id="html_cf08bc14a0a99e80650dca0e3806f8cf" style="width: 100.0%; height: 100.0%;">                 <div style='width:200px'>                     <h4>Hyderabad</h4>                     <b>Crimes:</b> 2881<br>                     <b>Coordinates:</b> 17.3606, 78.4741                 </div>                 </div>`)[0];
+                popup_9c18771716c36728debd64adc5d8a5bc.setContent(html_cf08bc14a0a99e80650dca0e3806f8cf);
+            
+        
+
+        marker_bb33f14bdd0603f0c8fb85693f873537.bindPopup(popup_9c18771716c36728debd64adc5d8a5bc)
+        ;
+
+        
+    
+    
+                marker_bb33f14bdd0603f0c8fb85693f873537.setIcon(icon_b214349116518e99a95ecbf3d81fa2af);
+            
+    
+            var marker_0c740d28486ec5021a8e45410f9711e7 = L.marker(
+                [22.7203616, 75.8681996],
+                {
+}
+            ).addTo(marker_cluster_e83c05e5359b585a7961f5082339af89);
+        
+    
+            var icon_84dffb113521e0a3c2b7209aa156039f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "fa-warning",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_309c3809aefa718027b3ba05f8dde7e4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c61f27905d05c85ff86c1e1873fe23d6 = $(`<div id="html_c61f27905d05c85ff86c1e1873fe23d6" style="width: 100.0%; height: 100.0%;">                 <div style='width:200px'>                     <h4>Indore</h4>                     <b>Crimes:</b> 699<br>                     <b>Coordinates:</b> 22.7204, 75.8682                 </div>                 </div>`)[0];
+                popup_309c3809aefa718027b3ba05f8dde7e4.setContent(html_c61f27905d05c85ff86c1e1873fe23d6);
+            
+        
+
+        marker_0c740d28486ec5021a8e45410f9711e7.bindPopup(popup_309c3809aefa718027b3ba05f8dde7e4)
+        ;
+
+        
+    
+    
+                marker_0c740d28486ec5021a8e45410f9711e7.setIcon(icon_84dffb113521e0a3c2b7209aa156039f);
+            
+    
+            var marker_ecd2f51ba2264dbcc2043a7749cad724 = L.marker(
+                [26.9154576, 75.8189817],
+                {
+}
+            ).addTo(marker_cluster_e83c05e5359b585a7961f5082339af89);
+        
+    
+            var icon_ed2527794e99d25bb53b4870fd77705c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "fa-warning",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b74c745e505682ea205365047f033920 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7507fcc231777aff50826c4d8210d784 = $(`<div id="html_7507fcc231777aff50826c4d8210d784" style="width: 100.0%; height: 100.0%;">                 <div style='width:200px'>                     <h4>Jaipur</h4>                     <b>Crimes:</b> 1479<br>                     <b>Coordinates:</b> 26.9155, 75.8190                 </div>                 </div>`)[0];
+                popup_b74c745e505682ea205365047f033920.setContent(html_7507fcc231777aff50826c4d8210d784);
+            
+        
+
+        marker_ecd2f51ba2264dbcc2043a7749cad724.bindPopup(popup_b74c745e505682ea205365047f033920)
+        ;
+
+        
+    
+    
+                marker_ecd2f51ba2264dbcc2043a7749cad724.setIcon(icon_ed2527794e99d25bb53b4870fd77705c);
+            
+    
+            var marker_3d61e628e266a8202d915f57f4e9e2f6 = L.marker(
+                [19.2396742, 73.1366482],
+                {
+}
+            ).addTo(marker_cluster_e83c05e5359b585a7961f5082339af89);
+        
+    
+            var icon_85312d8846b13d6689fe7af9c4304a65 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "fa-warning",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0101aac02020b8b0f1b1cca2669e65d0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_017b6bd1df762f27f97a82a9bfb6b7e7 = $(`<div id="html_017b6bd1df762f27f97a82a9bfb6b7e7" style="width: 100.0%; height: 100.0%;">                 <div style='width:200px'>                     <h4>Kalyan</h4>                     <b>Crimes:</b> 355<br>                     <b>Coordinates:</b> 19.2397, 73.1366                 </div>                 </div>`)[0];
+                popup_0101aac02020b8b0f1b1cca2669e65d0.setContent(html_017b6bd1df762f27f97a82a9bfb6b7e7);
+            
+        
+
+        marker_3d61e628e266a8202d915f57f4e9e2f6.bindPopup(popup_0101aac02020b8b0f1b1cca2669e65d0)
+        ;
+
+        
+    
+    
+                marker_3d61e628e266a8202d915f57f4e9e2f6.setIcon(icon_85312d8846b13d6689fe7af9c4304a65);
+            
+    
+            var marker_3567812576179d6268032ce1d2289c62 = L.marker(
+                [26.4635198, 80.246895],
+                {
+}
+            ).addTo(marker_cluster_e83c05e5359b585a7961f5082339af89);
+        
+    
+            var icon_a5899485b3fb654f3f6a974c98d77785 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "fa-warning",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f433fbddfc96ce5674d97e61e981803f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3784e1b6ae3df72e917b01295e59ae43 = $(`<div id="html_3784e1b6ae3df72e917b01295e59ae43" style="width: 100.0%; height: 100.0%;">                 <div style='width:200px'>                     <h4>Kanpur</h4>                     <b>Crimes:</b> 1112<br>                     <b>Coordinates:</b> 26.4635, 80.2469                 </div>                 </div>`)[0];
+                popup_f433fbddfc96ce5674d97e61e981803f.setContent(html_3784e1b6ae3df72e917b01295e59ae43);
+            
+        
+
+        marker_3567812576179d6268032ce1d2289c62.bindPopup(popup_f433fbddfc96ce5674d97e61e981803f)
+        ;
+
+        
+    
+    
+                marker_3567812576179d6268032ce1d2289c62.setIcon(icon_a5899485b3fb654f3f6a974c98d77785);
+            
+    
+            var marker_bbb3d0c2b02905e8a6fcc1859e1a328c = L.marker(
+                [22.5726459, 88.3638953],
+                {
+}
+            ).addTo(marker_cluster_e83c05e5359b585a7961f5082339af89);
+        
+    
+            var icon_68726fdfdecf492c12e444bba1c15b81 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "fa-skull",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_25bc78180acb85f2c3016fea344ed241 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1d4e43f0ca2554b0358896b90e35ef02 = $(`<div id="html_1d4e43f0ca2554b0358896b90e35ef02" style="width: 100.0%; height: 100.0%;">                 <div style='width:200px'>                     <h4>Kolkata</h4>                     <b>Crimes:</b> 2518<br>                     <b>Coordinates:</b> 22.5726, 88.3639                 </div>                 </div>`)[0];
+                popup_25bc78180acb85f2c3016fea344ed241.setContent(html_1d4e43f0ca2554b0358896b90e35ef02);
+            
+        
+
+        marker_bbb3d0c2b02905e8a6fcc1859e1a328c.bindPopup(popup_25bc78180acb85f2c3016fea344ed241)
+        ;
+
+        
+    
+    
+                marker_bbb3d0c2b02905e8a6fcc1859e1a328c.setIcon(icon_68726fdfdecf492c12e444bba1c15b81);
+            
+    
+            var marker_76a817ea8bacd69f38aff8f203b2747e = L.marker(
+                [26.8381, 80.9346001],
+                {
+}
+            ).addTo(marker_cluster_e83c05e5359b585a7961f5082339af89);
+        
+    
+            var icon_f6ab71621029f91b4fcfb3394ffb6a3d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "fa-warning",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a830d1b08519cc32850b6f85f4c66a1c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6f9be7161ffb1926973a3e461ea391b3 = $(`<div id="html_6f9be7161ffb1926973a3e461ea391b3" style="width: 100.0%; height: 100.0%;">                 <div style='width:200px'>                     <h4>Lucknow</h4>                     <b>Crimes:</b> 1456<br>                     <b>Coordinates:</b> 26.8381, 80.9346                 </div>                 </div>`)[0];
+                popup_a830d1b08519cc32850b6f85f4c66a1c.setContent(html_6f9be7161ffb1926973a3e461ea391b3);
+            
+        
+
+        marker_76a817ea8bacd69f38aff8f203b2747e.bindPopup(popup_a830d1b08519cc32850b6f85f4c66a1c)
+        ;
+
+        
+    
+    
+                marker_76a817ea8bacd69f38aff8f203b2747e.setIcon(icon_f6ab71621029f91b4fcfb3394ffb6a3d);
+            
+    
+            var marker_f53d79abc71021adbd398bd170b07ca3 = L.marker(
+                [30.9090157, 75.851601],
+                {
+}
+            ).addTo(marker_cluster_e83c05e5359b585a7961f5082339af89);
+        
+    
+            var icon_15b3fe3398a958968074cf0b6f83231c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "fa-warning",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b07fdf22fab1f45148f0aa04329c4091 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_01aeac92aceacd7fd5563f3fc7a46d0c = $(`<div id="html_01aeac92aceacd7fd5563f3fc7a46d0c" style="width: 100.0%; height: 100.0%;">                 <div style='width:200px'>                     <h4>Ludhiana</h4>                     <b>Crimes:</b> 761<br>                     <b>Coordinates:</b> 30.9090, 75.8516                 </div>                 </div>`)[0];
+                popup_b07fdf22fab1f45148f0aa04329c4091.setContent(html_01aeac92aceacd7fd5563f3fc7a46d0c);
+            
+        
+
+        marker_f53d79abc71021adbd398bd170b07ca3.bindPopup(popup_b07fdf22fab1f45148f0aa04329c4091)
+        ;
+
+        
+    
+    
+                marker_f53d79abc71021adbd398bd170b07ca3.setIcon(icon_15b3fe3398a958968074cf0b6f83231c);
+            
+    
+            var marker_6b301b22d2d27f26f1e53bd5f0d4c18c = L.marker(
+                [29.0018557, 77.7679671],
+                {
+}
+            ).addTo(marker_cluster_e83c05e5359b585a7961f5082339af89);
+        
+    
+            var icon_23098a9ce3a1046f333ed9cb18223f0d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "fa-warning",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1f93c2878411014776406a947a3837da = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_871ce5788bd84b230ef56c6d962679d8 = $(`<div id="html_871ce5788bd84b230ef56c6d962679d8" style="width: 100.0%; height: 100.0%;">                 <div style='width:200px'>                     <h4>Meerut</h4>                     <b>Crimes:</b> 395<br>                     <b>Coordinates:</b> 29.0019, 77.7680                 </div>                 </div>`)[0];
+                popup_1f93c2878411014776406a947a3837da.setContent(html_871ce5788bd84b230ef56c6d962679d8);
+            
+        
+
+        marker_6b301b22d2d27f26f1e53bd5f0d4c18c.bindPopup(popup_1f93c2878411014776406a947a3837da)
+        ;
+
+        
+    
+    
+                marker_6b301b22d2d27f26f1e53bd5f0d4c18c.setIcon(icon_23098a9ce3a1046f333ed9cb18223f0d);
+            
+    
+            var marker_4fa95c252fef6f708c2f31dffda26ab5 = L.marker(
+                [19.054999, 72.8692035],
+                {
+}
+            ).addTo(marker_cluster_e83c05e5359b585a7961f5082339af89);
+        
+    
+            var icon_fc634479109c5a489bb0c2ee08954b62 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "fa-skull",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f9fe051bfe5804f6ce31fd41a810138a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1a89ab1de45048963746693bc640014c = $(`<div id="html_1a89ab1de45048963746693bc640014c" style="width: 100.0%; height: 100.0%;">                 <div style='width:200px'>                     <h4>Mumbai</h4>                     <b>Crimes:</b> 4415<br>                     <b>Coordinates:</b> 19.0550, 72.8692                 </div>                 </div>`)[0];
+                popup_f9fe051bfe5804f6ce31fd41a810138a.setContent(html_1a89ab1de45048963746693bc640014c);
+            
+        
+
+        marker_4fa95c252fef6f708c2f31dffda26ab5.bindPopup(popup_f9fe051bfe5804f6ce31fd41a810138a)
+        ;
+
+        
+    
+    
+                marker_4fa95c252fef6f708c2f31dffda26ab5.setIcon(icon_fc634479109c5a489bb0c2ee08954b62);
+            
+    
+            var marker_8120228f5496fe430a03441aa4eca9a5 = L.marker(
+                [21.5071955, 78.9725097],
+                {
+}
+            ).addTo(marker_cluster_e83c05e5359b585a7961f5082339af89);
+        
+    
+            var icon_0949ed1f45bc849844eeebd87a77ff81 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "fa-warning",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_16f11a2f4810d647c337a02c654d9a44 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f31c443b9c16b8c0eff91098c34df9cd = $(`<div id="html_f31c443b9c16b8c0eff91098c34df9cd" style="width: 100.0%; height: 100.0%;">                 <div style='width:200px'>                     <h4>Nagpur</h4>                     <b>Crimes:</b> 1053<br>                     <b>Coordinates:</b> 21.5072, 78.9725                 </div>                 </div>`)[0];
+                popup_16f11a2f4810d647c337a02c654d9a44.setContent(html_f31c443b9c16b8c0eff91098c34df9cd);
+            
+        
+
+        marker_8120228f5496fe430a03441aa4eca9a5.bindPopup(popup_16f11a2f4810d647c337a02c654d9a44)
+        ;
+
+        
+    
+    
+                marker_8120228f5496fe430a03441aa4eca9a5.setIcon(icon_0949ed1f45bc849844eeebd87a77ff81);
+            
+    
+            var marker_6fd7bee37901f93a059a70e13e120981 = L.marker(
+                [20.0112475, 73.7902364],
+                {
+}
+            ).addTo(marker_cluster_e83c05e5359b585a7961f5082339af89);
+        
+    
+            var icon_589f934a5b86d52b072494300e952051 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "fa-warning",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_941bfe8674d61918c98ba9a5dc4a08f9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_22b903c6d9258451bda234f46364b63f = $(`<div id="html_22b903c6d9258451bda234f46364b63f" style="width: 100.0%; height: 100.0%;">                 <div style='width:200px'>                     <h4>Nashik</h4>                     <b>Crimes:</b> 366<br>                     <b>Coordinates:</b> 20.0112, 73.7902                 </div>                 </div>`)[0];
+                popup_941bfe8674d61918c98ba9a5dc4a08f9.setContent(html_22b903c6d9258451bda234f46364b63f);
+            
+        
+
+        marker_6fd7bee37901f93a059a70e13e120981.bindPopup(popup_941bfe8674d61918c98ba9a5dc4a08f9)
+        ;
+
+        
+    
+    
+                marker_6fd7bee37901f93a059a70e13e120981.setIcon(icon_589f934a5b86d52b072494300e952051);
+            
+    
+            var marker_07abeb1eb9d713a3c48244c40c00719a = L.marker(
+                [25.6093239, 85.1235252],
+                {
+}
+            ).addTo(marker_cluster_e83c05e5359b585a7961f5082339af89);
+        
+    
+            var icon_e5a967d73d05428fb03411f039131f4f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "fa-warning",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d73ddf6b0050eeecd002d7af052bf2f4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_02c09d67db8b1d25b3b23e577aed474f = $(`<div id="html_02c09d67db8b1d25b3b23e577aed474f" style="width: 100.0%; height: 100.0%;">                 <div style='width:200px'>                     <h4>Patna</h4>                     <b>Crimes:</b> 695<br>                     <b>Coordinates:</b> 25.6093, 85.1235                 </div>                 </div>`)[0];
+                popup_d73ddf6b0050eeecd002d7af052bf2f4.setContent(html_02c09d67db8b1d25b3b23e577aed474f);
+            
+        
+
+        marker_07abeb1eb9d713a3c48244c40c00719a.bindPopup(popup_d73ddf6b0050eeecd002d7af052bf2f4)
+        ;
+
+        
+    
+    
+                marker_07abeb1eb9d713a3c48244c40c00719a.setIcon(icon_e5a967d73d05428fb03411f039131f4f);
+            
+    
+            var marker_42bc00683fb2b8f0bfb911fd88c4a814 = L.marker(
+                [18.5213738, 73.8545071],
+                {
+}
+            ).addTo(marker_cluster_e83c05e5359b585a7961f5082339af89);
+        
+    
+            var icon_f7563c8abe9f91e9db69d29af631ece4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "fa-skull",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_09b02d033d95995d99ed33f7ae3babc4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_90959c43d3ce18e1bf6158747ff86ce4 = $(`<div id="html_90959c43d3ce18e1bf6158747ff86ce4" style="width: 100.0%; height: 100.0%;">                 <div style='width:200px'>                     <h4>Pune</h4>                     <b>Crimes:</b> 2212<br>                     <b>Coordinates:</b> 18.5214, 73.8545                 </div>                 </div>`)[0];
+                popup_09b02d033d95995d99ed33f7ae3babc4.setContent(html_90959c43d3ce18e1bf6158747ff86ce4);
+            
+        
+
+        marker_42bc00683fb2b8f0bfb911fd88c4a814.bindPopup(popup_09b02d033d95995d99ed33f7ae3babc4)
+        ;
+
+        
+    
+    
+                marker_42bc00683fb2b8f0bfb911fd88c4a814.setIcon(icon_f7563c8abe9f91e9db69d29af631ece4);
+            
+    
+            var marker_a2847dc52604f760461f37278a7e02c0 = L.marker(
+                [22.3053263, 70.8028377],
+                {
+}
+            ).addTo(marker_cluster_e83c05e5359b585a7961f5082339af89);
+        
+    
+            var icon_71f59e1cbecbe77d004ccf41cc2073a1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "fa-warning",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1c151b71fc43373534aef98d796f7cb2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d089fb6816b744ee63169d0806105997 = $(`<div id="html_d089fb6816b744ee63169d0806105997" style="width: 100.0%; height: 100.0%;">                 <div style='width:200px'>                     <h4>Rajkot</h4>                     <b>Crimes:</b> 1084<br>                     <b>Coordinates:</b> 22.3053, 70.8028                 </div>                 </div>`)[0];
+                popup_1c151b71fc43373534aef98d796f7cb2.setContent(html_d089fb6816b744ee63169d0806105997);
+            
+        
+
+        marker_a2847dc52604f760461f37278a7e02c0.bindPopup(popup_1c151b71fc43373534aef98d796f7cb2)
+        ;
+
+        
+    
+    
+                marker_a2847dc52604f760461f37278a7e02c0.setIcon(icon_71f59e1cbecbe77d004ccf41cc2073a1);
+            
+    
+            var marker_75992076b34966e91a887b8d8e7fa41e = L.marker(
+                [34.0747444, 74.8204443],
+                {
+}
+            ).addTo(marker_cluster_e83c05e5359b585a7961f5082339af89);
+        
+    
+            var icon_506973c7f66dc4336830928091535268 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "fa-warning",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_29b9ef3f1ea4582601cb941e25f838aa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b9319ba302f4f30a8b6a1f7c52539135 = $(`<div id="html_b9319ba302f4f30a8b6a1f7c52539135" style="width: 100.0%; height: 100.0%;">                 <div style='width:200px'>                     <h4>Srinagar</h4>                     <b>Crimes:</b> 371<br>                     <b>Coordinates:</b> 34.0747, 74.8204                 </div>                 </div>`)[0];
+                popup_29b9ef3f1ea4582601cb941e25f838aa.setContent(html_b9319ba302f4f30a8b6a1f7c52539135);
+            
+        
+
+        marker_75992076b34966e91a887b8d8e7fa41e.bindPopup(popup_29b9ef3f1ea4582601cb941e25f838aa)
+        ;
+
+        
+    
+    
+                marker_75992076b34966e91a887b8d8e7fa41e.setIcon(icon_506973c7f66dc4336830928091535268);
+            
+    
+            var marker_1794d7d223f72df23f42b0af6155e4a8 = L.marker(
+                [21.2094892, 72.8317058],
+                {
+}
+            ).addTo(marker_cluster_e83c05e5359b585a7961f5082339af89);
+        
+    
+            var icon_7f7641667b5eeea0edf44de685d80f4c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "fa-warning",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c8c5a9893ad3a4d33c9d4c6cc4a3ea68 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dac3a12148c001929c979eb3cf5d4551 = $(`<div id="html_dac3a12148c001929c979eb3cf5d4551" style="width: 100.0%; height: 100.0%;">                 <div style='width:200px'>                     <h4>Surat</h4>                     <b>Crimes:</b> 1111<br>                     <b>Coordinates:</b> 21.2095, 72.8317                 </div>                 </div>`)[0];
+                popup_c8c5a9893ad3a4d33c9d4c6cc4a3ea68.setContent(html_dac3a12148c001929c979eb3cf5d4551);
+            
+        
+
+        marker_1794d7d223f72df23f42b0af6155e4a8.bindPopup(popup_c8c5a9893ad3a4d33c9d4c6cc4a3ea68)
+        ;
+
+        
+    
+    
+                marker_1794d7d223f72df23f42b0af6155e4a8.setIcon(icon_7f7641667b5eeea0edf44de685d80f4c);
+            
+    
+            var marker_9e50085ee7099a7cb6e1b574e5ba5e67 = L.marker(
+                [19.1943294, 72.9701779],
+                {
+}
+            ).addTo(marker_cluster_e83c05e5359b585a7961f5082339af89);
+        
+    
+            var icon_4f8582d2a4e7538c6fd55042dba24258 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "fa-warning",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_637a0791de2516e15937fd11675e5739 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f3e515b17197af57714dc73bffcebfcb = $(`<div id="html_f3e515b17197af57714dc73bffcebfcb" style="width: 100.0%; height: 100.0%;">                 <div style='width:200px'>                     <h4>Thane</h4>                     <b>Crimes:</b> 706<br>                     <b>Coordinates:</b> 19.1943, 72.9702                 </div>                 </div>`)[0];
+                popup_637a0791de2516e15937fd11675e5739.setContent(html_f3e515b17197af57714dc73bffcebfcb);
+            
+        
+
+        marker_9e50085ee7099a7cb6e1b574e5ba5e67.bindPopup(popup_637a0791de2516e15937fd11675e5739)
+        ;
+
+        
+    
+    
+                marker_9e50085ee7099a7cb6e1b574e5ba5e67.setIcon(icon_4f8582d2a4e7538c6fd55042dba24258);
+            
+    
+            var marker_4534a40f7f4ac2c7f5150d822a37d856 = L.marker(
+                [25.3356491, 83.0076292],
+                {
+}
+            ).addTo(marker_cluster_e83c05e5359b585a7961f5082339af89);
+        
+    
+            var icon_e56c19b3a2c7fc5d9b252abaef4e93d1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "fa-warning",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e9eb8045536d3de65cd64c84d0ecc9f4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_33570e5a0861c3e7e45d15674295bc1d = $(`<div id="html_33570e5a0861c3e7e45d15674295bc1d" style="width: 100.0%; height: 100.0%;">                 <div style='width:200px'>                     <h4>Varanasi</h4>                     <b>Crimes:</b> 355<br>                     <b>Coordinates:</b> 25.3356, 83.0076                 </div>                 </div>`)[0];
+                popup_e9eb8045536d3de65cd64c84d0ecc9f4.setContent(html_33570e5a0861c3e7e45d15674295bc1d);
+            
+        
+
+        marker_4534a40f7f4ac2c7f5150d822a37d856.bindPopup(popup_e9eb8045536d3de65cd64c84d0ecc9f4)
+        ;
+
+        
+    
+    
+                marker_4534a40f7f4ac2c7f5150d822a37d856.setIcon(icon_e56c19b3a2c7fc5d9b252abaef4e93d1);
+            
+    
+            var marker_c65330e197eb62d86feed0646592a699 = L.marker(
+                [19.3428238, 72.805441],
+                {
+}
+            ).addTo(marker_cluster_e83c05e5359b585a7961f5082339af89);
+        
+    
+            var icon_0a0f674d3cc6be2e9e97c3963aa29c78 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "fa-warning",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9079dd2fcc73023fc0c00f6eea9191c0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_86232e19e7c09f34b5a55e611f9539e2 = $(`<div id="html_86232e19e7c09f34b5a55e611f9539e2" style="width: 100.0%; height: 100.0%;">                 <div style='width:200px'>                     <h4>Vasai</h4>                     <b>Crimes:</b> 362<br>                     <b>Coordinates:</b> 19.3428, 72.8054                 </div>                 </div>`)[0];
+                popup_9079dd2fcc73023fc0c00f6eea9191c0.setContent(html_86232e19e7c09f34b5a55e611f9539e2);
+            
+        
+
+        marker_c65330e197eb62d86feed0646592a699.bindPopup(popup_9079dd2fcc73023fc0c00f6eea9191c0)
+        ;
+
+        
+    
+    
+                marker_c65330e197eb62d86feed0646592a699.setIcon(icon_0a0f674d3cc6be2e9e97c3963aa29c78);
+            
+    
+            var marker_ee74726078afc6a4bf9508be7497db47 = L.marker(
+                [17.6935526, 83.2921297],
+                {
+}
+            ).addTo(marker_cluster_e83c05e5359b585a7961f5082339af89);
+        
+    
+            var icon_e0027e1c565652836a96379b138dd608 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "fa-warning",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_80016ae0976107c2d63eb0818166847f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4c7d3cce7394b9f928297c20d09b74d5 = $(`<div id="html_4c7d3cce7394b9f928297c20d09b74d5" style="width: 100.0%; height: 100.0%;">                 <div style='width:200px'>                     <h4>Visakhapatnam</h4>                     <b>Crimes:</b> 728<br>                     <b>Coordinates:</b> 17.6936, 83.2921                 </div>                 </div>`)[0];
+                popup_80016ae0976107c2d63eb0818166847f.setContent(html_4c7d3cce7394b9f928297c20d09b74d5);
+            
+        
+
+        marker_ee74726078afc6a4bf9508be7497db47.bindPopup(popup_80016ae0976107c2d63eb0818166847f)
+        ;
+
+        
+    
+    
+                marker_ee74726078afc6a4bf9508be7497db47.setIcon(icon_e0027e1c565652836a96379b138dd608);
+            
+    
+            marker_cluster_e83c05e5359b585a7961f5082339af89.addTo(map_4251e66dd0eeeefe22cf14f26a0a8b5c);
+        
+</script>
+</html>
