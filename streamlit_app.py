@@ -133,7 +133,6 @@ Key Takeaways:
 -Predictive modeling gave a forward-looking view into crime trends for 2025.
 
 Armed with these insights, decision-makers can make more informed, targeted, and proactive interventions to improve safety and reduce crime across the nation.""")
-=======
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
